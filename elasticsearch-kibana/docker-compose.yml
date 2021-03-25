@@ -19,7 +19,7 @@ services:
       - "http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization"
       - "http.cors.allow-credentials=true"
     volumes:
-      - ./esdata:/usr/share/elasticsearch/data
+      - ./data:/usr/share/elasticsearch/data
     ulimits:
       memlock:
         soft: -1

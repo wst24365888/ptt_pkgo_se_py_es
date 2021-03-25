@@ -17,10 +17,9 @@ def get_setting():
     settings = {
         "index": {
             "number_of_shards": 3,
-            "number_of_replicas": 1
+            "number_of_replicas": 1,
         }
     }
-
     return settings
 
 
@@ -31,7 +30,8 @@ def get_mappings():
                 "type": "keyword"
             },
             "article_title": {
-                "type": "text"
+                "type": "text",
+                # "analyzer":"smartcn"
             },
             "author": {
                 "type": "keyword"
@@ -40,7 +40,8 @@ def get_mappings():
                 "type": "keyword"
             },
             "content": {
-                "type": "text"
+                "type": "text",
+                # "analyzer":"smartcn"
             },
             "date": {
                 "type": "date",
@@ -80,7 +81,8 @@ def get_mappings():
                 "type": "nested",
                 "properties": {
                     "push_content": {
-                        "type": "text"
+                        "type": "text",
+                        # "analyzer":"smartcn"
                     },
                     "push_ipdatetime": {
                         "type": "date",
