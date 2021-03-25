@@ -1,0 +1,2 @@
+data.json filter=lfs diff=lfs merge=lfs -text
+PokemonGO-1-807.json filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,1 @@
+python .\ptt-web-crawler\PttWebCrawler\crawler.py -b PokemonGO -i 1 -1
